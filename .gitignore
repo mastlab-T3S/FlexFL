@@ -1,0 +1,20 @@
+data/
+save/
+
+# Virtual Environment
+venv/
+*.pyc
+__pycache__/
+*/__pycache__/
+# PyCharm
+.idea/
+*.iml
+
+# Environment
+.env
+
+.pytest_cache
+
+wandb
+output/
+
