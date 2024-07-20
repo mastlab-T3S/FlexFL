@@ -10,7 +10,7 @@ Note: The scripts will be slow without the implementation of parallel computing.
 
 Along with the increasing popularity of Deep Learning (DL) techniques, more and more Artificial Intelligence of Things (AIoT) systems are adopting federated learning (FL) to enable privacy-aware collaborative learning among AIoT devices. However, due to the inherent data and device heterogeneity issues, existing FL-based AIoT systems suffer from the model selection problem. Although various heterogeneous FL methods have been investigated to enable collaborative training among heterogeneous models, there is still a lack of i) wise heterogeneous model generation methods for devices, ii) consideration of uncertain factors, and iii) performance guarantee for large models, thus strongly limiting the overall FL performance. To address the above issues, this paper introduces a novel heterogeneous FL framework named FlexFL. By adopting our Average Percentage of Zeros (APoZ)-guided flexible pruning strategy, FlexFL can effectively derive best-fit models for heterogeneous devices to explore their greatest potential. Meanwhile, our proposed adaptive local pruning strategy allows AIoT devices to prune their received models according to their varying resources within uncertain scenarios. Moreover, based on self-knowledge distillation, FlexFL can enhance the inference performance of large models by learning knowledge from small models. Comprehensive experimental results show that, compared to state-of-the-art heterogeneous FL methods, FlexFL can significantly improve the overall inference accuracy by up to 14.24%.
 
-![image-20240721050946372](https://raw.githubusercontent.com/DoubleZeroWater/img/master/202407210509469.png)
+![image](Fig/img.png)
 
 ## Requirements
 
@@ -53,9 +53,10 @@ ScaleFL:
 > python main_fed.py --gpu 0 --algorithm ScaleFL --model vgg --dataset cifar10 --num_channels 3 --num_classes 10 --iid 0 --noniid_case 5 --data_beta 0.6 --width_ration 0.75 0.82 1.0 --client_hetero_ration 4:3:3 --gamma 0.05
 
 ## Results
+![image](Fig/PixPin_2024-07-21_05-22-56.jpg)
+<img src="Fig/PixPin_2024-07-21_05-23-25.jpg" width="500px">
 
-
-
+<img src="Fig/PixPin_2024-07-21_05-23-10.jpg" width="500px">
 ## Ackonwledgements
 
 Acknowledgements give to [youkaichao](https://github.com/youkaichao).
